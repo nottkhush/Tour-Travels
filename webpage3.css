@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    overflow: hidden;
+    font-family: "Montserrat";
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1477346611705-65d1883cee1e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+
+#main #nav{
+    padding: 0 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+}
+
+#navtext{
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#navtext h4{
+    font-family: "Montserrat";
+    font-size: 20px;
+}
+
+#nav #nright a{
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+#nav #nright a:nth-child(2){
+    padding-bottom: 5px;
+    border-bottom: 3px solid white;
+}
+
+#main #left{
+    position: relative;
+    padding: 0 80px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.501);
+}
+
+#left #scroll{
+    display: flex;
+    align-items: center;
+    color: white;
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform-origin: 0 50%;
+    transform: rotate(-90deg);
+    gap: 5px;
+}
+
+#scroll #line{
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    opacity: .8;
+}
+
+#scroll h3{
+    font-size: 7px;
+    font-weight: 500;
+    opacity: .8;
+}
+
+#left .place{
+    color: white;
+    width: 100%;
+}
+
+.place h4{
+    opacity: .7;
+    display: inline-block;
+    border-bottom: 1px solid white;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+}
+
+#left .place:nth-child(3) h4{
+    border-bottom: 2px solid white;
+    opacity: 1;
+    font-size: 50px;
+    white-space: nowrap;
+}
+
+#left .place:nth-child(3) h6{
+    font-size: 20px;
+}
+
+.place h4{
+    font-weight: 500;
+}
+
+.place h6{
+    font-weight: 600;
+    opacity: .4;
+}
+
+#main #right{
+    width: 65%;
+    height: 100%;
+}
+
+#right #text{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0, -50%);
+    color: white;
+    font-size: 80px;
+    font-weight: 10;
+    text-align: right;
+    padding-right: 50px;
+}
+
+#text h3{
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+#text h1{
+    font-family: "Gilroy";
+    font-weight: 700;
+    font-size: 170px;
+    letter-spacing: -8px;
+}
+
+#text #input{
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#text input{
+    width: 100%;
+    padding: 12px 10px;
+    background-color: transparent;
+    font-size: 15px;
+    border: none;
+    color: white;
+    outline: none;
+    border-bottom: 2px solid white;
+}
+
+#text input::placeholder{
+    color: white;
+}
+
+#text i{
+    font-size: 20px;
+}
+
+#right small{
+    position: absolute;
+    color: white;
+    bottom: 5%;
+    right: 5%;
+}
+
+@media(max-width: 500px){
+    #main #nav{
+        height: 70px;
+        padding: 0 20px;
+    }
+
+    #nav #nright{
+        display: none;
+    }
+
+    #nav h2{
+        font-size: 16px;
+    }
+}
