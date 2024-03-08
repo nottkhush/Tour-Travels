@@ -42,6 +42,10 @@ html, body{
     font-size: 20px;
 }
 
+#nav i{
+    display: none;
+}
+
 #nav #nright a{
     font-weight: 500;
     font-size: 12px;
@@ -196,11 +200,29 @@ html, body{
         padding: 0 20px;
     }
 
+    #nav h4{
+        font-size: 18px;
+    }
+
     #nav #nright{
         display: none;
     }
 
-    #nav h2{
-        font-size: 16px;
+    #nav i{
+        display: initial;
+    }
+
+    #main #left{
+        padding: 0 20px;
+        width: 100%;
+        height: 60%;
+    }
+
+    #left .place:nth-child(3) h4{
+        font-size: 20px;
+    }
+
+    #left .place:nth-child(3) h6{
+        font-size: 10px;
     }
 }
